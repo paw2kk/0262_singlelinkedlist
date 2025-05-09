@@ -173,6 +173,14 @@ int main()
             }
             break;
             case '5':
+            {
+            }
+            break;
+            default:
+            {
+                cout << "Pilihan salah !." << endl;
+            }
+            break;
         }
-    }
+    }while (ch != '5');
 }
