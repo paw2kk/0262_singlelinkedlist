@@ -29,7 +29,7 @@ class LinkedList
 
         if (START == NULL || nim <= START->noMhs)
         {
-            if ((START != NULL ) && (nim >= current->noMhs))
+            if ((START != NULL ) && (nim >= START->noMhs))
             {
                 cout << "\nDuplikasi no Mhs tidak diijinkan\n";
                 return;
@@ -94,11 +94,11 @@ class LinkedList
         {
             cout << "\nData didalam list adalah:\n";
             Node *currentNode = START;
-            while (currentNode != NUll)
-            [
+            while (currentNode != NULL)
+            {
                 cout << currentNode->noMhs << endl;
                 currentNode = currentNode->next;
-            ]
+            }
             cout << endl;
         }
     }
@@ -118,7 +118,7 @@ int main()
         cout << "3. Menampilkan semua data didalam list" << endl;
         cout << "4. Mencari data dalam list" << endl;
         cout << "5. Keluar" << endl;
-        cout << endl;
+        cout << endl
         << "Masukkan pilihan (1-5: )";
         cin >> ch;
         switch (ch)
